@@ -1,0 +1,30 @@
+export const config = {
+  version: 1,
+  name: 'Clearspace',
+  currency: 'USD',
+  locale: 'en-US',
+  demo: true,
+  areaUnit: 'sq ft',
+  taxNote: 'Before sales tax',
+  accent: '#244d9c',
+  headline: 'See your clean take shape.',
+  tagline: 'A fresh perspective on home cleaning',
+  intro: 'Tell us a little about your home. Explore the space. Find your starting price.',
+  logoDataUrl: '',
+  area: { min: 500, max: 5000, step: 1, sliderStep: 50 },
+  limits: { floors: [1, 3], bedrooms: [0, 6], bathrooms: [1, 4] },
+  services: [
+    { id: 'standard', label: 'Standard', detail: 'Everyday surfaces, floors, kitchen and bathrooms.', centsPerArea: 11 },
+    { id: 'deep', label: 'Deep clean', detail: 'A detailed reset, including skirting boards and extra attention to buildup.', centsPerArea: 17 },
+    { id: 'move', label: 'Move-out', detail: 'An empty-home clean, including empty cupboard surfaces, kitchen and bathroom detail, and floors.', centsPerArea: 22 }
+  ],
+  extraBedroomCents: 1200,
+  extraBathroomCents: 2000,
+  extraFloorCents: 1500,
+  minimumCents: 12000,
+  rangePercent: 10,
+  roundingCents: 500,
+  defaults: { area: 1800, floors: 2, bedrooms: 3, bathrooms: 2, service: 'standard' },
+  enquiryUrl: '',
+  fiverrUrl: ''
+};
